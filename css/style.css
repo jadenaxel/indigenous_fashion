@@ -1,0 +1,529 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input:focus{
+    outline: none;
+}
+:root{
+    --first-font: "Century Gothic";
+    --second-font: "Segoe UI";
+    --third-font: "Century Gothic";
+}
+.center{
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    height: 120px;
+    background: #fff;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    padding: 0 30px;
+    margin-bottom: 25px;
+}
+.header_flex{
+    display: flex;
+    height: 100%;
+}
+.header-first-side{
+    width: 100%;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+.header_logo{
+    display: flex;      
+    align-items: center;
+}
+.header_menu{
+    margin-right: 40px;
+}
+.nav-bar{
+    height: 100%;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+li a{
+    font-family: var(--first-font);
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 71px;
+    text-decoration: none;
+    margin-left: 40px;
+    color: #000;
+} 
+li a:hover{
+    border-bottom: 1px solid rebeccapurple;
+    padding-bottom: 25px;
+    transition: .5s linear padding-bottom;
+}
+.header-second-side{
+    display: flex;
+    align-items: center;
+}
+.header-second-side-profile{
+    display: flex;
+    align-items: center;
+    font-family: var(--second-font);
+    font-weight: normal;
+    font-size: 20px;
+    color: #707070;
+}
+.header-second-side-search, .header-second-side-shop, .header-second-side-profile-title{
+    margin-right: 20px;
+}
+.header-cover{
+    background: url(../img/fashion_background.svg) no-repeat left 100% / cover;
+    height: 985px;
+}
+.header-cover-title{
+    padding-top: 262px;
+}
+.header-cover-title p{
+    width: 681px;
+    font-family: var(--third-font);
+    font-weight: bold;
+    font-size: 127px;
+    line-height: 130px;
+    color: #ffe0d5;
+    margin-left: 50px;
+    margin-bottom: 106px;
+}
+.header-cover-button button{
+    width: 315px;
+    height: 93px;
+    border-radius: 46.5px;
+    background: transparent;
+    border: 3px solid #fff;
+    margin-left: 50px;
+    font-family: var(--third-font);
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 71px;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+.header-cover-button button:focus{
+    outline: none;
+}
+.week-fashion{
+    background: #F9F9F9;
+    margin-top: -117px;
+    margin-bottom: 25px;
+}
+.week-fashion-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.week-fashion-section-title{
+    width: 300px;
+    font-family: var(--third-font);
+    font-weight: normal;
+    font-size: 28px;
+    letter-spacing: 0.21em;
+    line-height: 59px;
+    color: #a1a1a1;
+}
+.week-fashion-section-time{
+    width: 400px;
+    font-family: var(--third-font);
+    font-weight: bold;
+    font-size: 45px;
+    letter-spacing: 0.04em;
+    line-height: 59px;
+    color: #292929;
+}
+.week-fashion-section-button{
+    width: 174px;
+    height: 53px;
+    border-radius: 26.5px;
+    background: #d62087;
+    border: 0;
+    cursor: pointer;
+    font-family: var(--third-font);
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.21em;
+    line-height: 59px;
+    color: #fff;
+}
+.week-fashion-section-button:focus{
+    outline: none;
+}
+.week-fashion-img{
+    display: flex;
+    align-items: center;
+}
+.week-fashion-img img:first-child{
+    width: 438px;
+    height: 413px;
+    margin-top: -198px;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 58px;
+}
+.week-fashion-img img:last-child{
+    width: 456px;
+    height: 413px;
+    margin-left: -118px;
+    margin-top: -165px;
+    object-fit: cover;
+    object-position: top;
+}
+.week-fashion-section{
+    margin-left: 40px;
+}
+.first-section-title{
+    font-family: var(--third-font);
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.28em;
+    line-height: 59px;
+    color: #aeaeae;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.first-section-title:before{
+    content: url(../img/line.svg) " ";
+    position: relative;
+    top: -9px;
+}
+.first-section-title:after{
+    content: url(../img/line.svg) " ";
+    position: relative;
+    top: -9px;
+}
+.firs-section-grid-items{
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid #e8e8e8;
+}
+.firs-section-grid-items img{
+    width: 100%;
+    object-fit: cover;
+}
+.first-section-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 0 20px;
+}
+.first-section-grid-items-data-title{
+    font-family: var(--third-font);
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 0.28em;
+    line-height: 59px;
+    color: #aeaeae;
+    text-align: center;
+}
+.first-section-grid-items-data-time{
+    font-family: var(--third-font);
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 0.28em;
+    line-height: 59px;
+    text-align: center;
+    color: #d62087;
+}
+.second-section{
+    background: url(../img/ocap_background.svg) no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    margin-top: 49px;   
+    margin-bottom: 40px;
+    height: 262px;
+}
+.second-section-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.offers-title{
+    font-family: var(--third-font);
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.28em;
+    line-height: 59px;
+    color: #aeaeae;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.offers-title:before{
+    content: url(../img/line.svg) " ";
+    position: relative;
+    top: -9px;
+}
+.offers-title:after{
+    content: url(../img/line.svg) " ";
+    position: relative;
+    top: -9px;
+}
+.offers-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 10px;
+}
+.offers-grid-columns:first-child{
+    background: url(../img/columns-1.svg) no-repeat right 100% / cover;
+    grid-column: 1 / 3;
+    height: 400px;
+    position: relative;
+}
+.offers-grid-columns:nth-child(2){
+    background: url(../img/columns-2.svg) no-repeat left 100% / cover;
+    height: 300px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    position: relative;
+}
+.offers-grid-columns:nth-child(3){
+    background: url(../img/columns-3.svg) no-repeat left 100% / cover;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;   
+    position: relative;
+}
+.offers-grid-columns:last-child{
+    background: url(../img/columns-4.svg) no-repeat right 100% / cover;
+    grid-column: 3 / -1;
+    grid-row: 3 / -1;
+    position: relative;
+}
+.offers-grid-columns:first-child h2, .offers-grid-columns:nth-child(2) h2, .offers-grid-columns:nth-child(3) h2, .offers-grid-columns:last-child h2{
+    font-family: var(--third-font);
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.19em;
+    line-height: 59px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+}
+.contact{
+    background: #FFDD00;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-family: var(--third-font);
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.27em;
+    line-height: 71px;
+    color: #8d8d8d;
+}
+.contact-form-input{
+    display: flex;
+}
+input{
+    border: 0
+}
+input[type=text]{
+    width: 841px;
+    height: 100px;
+    background: #fff;
+    font-family: var(--third-font);
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.27em;
+    line-height: 71px;
+    color: #8d8d8d;
+    padding: 0 20px;
+}
+input[type=submit]{
+    width: 433px;
+    height: 100px;
+    background: #d62087;
+    cursor: pointer;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 46px;
+    color: #ffe0d5;
+}
+footer{
+    height: 86px;
+    background: #3b3b3b;
+    color: #8D8D8D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p{
+    margin-left: 43px;
+}
+.div{
+    display: flex;
+    justify-content: space-between;
+}
+.div p:last-child{
+    margin-left: 161px;
+}
+@media(max-width: 1274px){
+    .week-fashion-section-title{
+        margin-top: 5S0px;
+    }
+    .week-fashion-flex{
+        flex-direction: column;
+    }
+    .week-fashion-section{
+        margin-bottom: 150px;
+    }
+    .week-fashion-section-title, .week-fashion-section-button{
+        width: 100%;
+        text-align: center;
+    }
+    .week-fashion-section-time{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .week-fashion-img img:first-child{
+        width: 100%;
+        height: auto;
+        margin-top: auto;
+        margin-right: auto;
+    }
+    .week-fashion-img img:last-child{
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-top: 14px;
+    }
+    .first-section-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .firs-section-grid-items{
+        margin-bottom: 20px;
+    }
+    .second-section-container img:last-child{
+        display: none;
+    }
+    .second-section-container{
+        flex-wrap: wrap;
+    }
+    .contact-form-input input[type=text]{
+        width: 500px;
+    }
+    .contact-form-input input[type=submit]{
+        width: 200px;
+        font-size: 32px;
+    }
+}
+@media(max-width: 1156px){
+    .week-fashion-img{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .week-fashion-section{
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 1024px){
+    .header-cover{
+        background: url(../img/fashion_background.svg) no-repeat center 100% / cover;
+    }
+    .header-cover-title p{
+        font-size: 90px;
+    }
+    .header-cover-button button{
+        font-size: 25px;
+    }
+    .offers-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 860px){
+    .nav{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+@media(max-width: 768px){
+    .header-cover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header-cover-title{
+        padding-top: 0;
+    }
+    .header-cover-title p{
+        width: 100%;
+        font-size: 70px;
+        text-align: center;
+        word-break: break-word;
+        margin: 0 auto;
+    }
+    .contact-form-input{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact-form-input input[type=text]{
+        width: 300px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    .contact-form-input input[type=submit]{
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+    }
+    label{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media(max-width: 400px){
+    .header-cover{
+        height: 500px;
+        justify-content: flex-start;
+    }
+    .header-cover-title p{
+        font-size: 40px;
+    }
+    .header-cover-button button{
+        width: 250px;
+        font-size: 20px;
+    }
+    .week-fashion-section-title{
+        font-size: 20px;
+    }
+    .week-fashion-section-time{
+        font-size: 30px;
+    }
+    .offers-grid{
+        grid-template-columns: 1fr;
+    }
+    .offers-title{
+        font-size: 20px;
+    }
+}
+@media(max-width: 479px){
+    .header_logo{
+        width: 100%;
+        justify-content: center;
+    }
+    .header-second-side{
+        display: none;
+    }
+}
